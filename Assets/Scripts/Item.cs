@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class Item
 {
-    [SerializeField] private string itemName;
-    [SerializeField] private string id;
-    [SerializeField] private string description;
+    [SerializeField] protected string itemName;
+    [SerializeField] protected string id;
+    [SerializeField] protected string description;
 
 
     public Item(string itemName, string id, string description)
@@ -20,8 +20,13 @@ public class Item
             
     }
 
-    public object GetItemName()
+    public string GetItemName()
     {
         return itemName;
+    }
+
+    public virtual void MyTreat()
+    {
+        Debug.Log("Som un item general, no tenc característica especial");
     }
 }

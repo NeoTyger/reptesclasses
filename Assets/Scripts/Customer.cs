@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class Customer
 {
-    [SerializeField] public string firstName;
-    [SerializeField] public string lastName;
-    [SerializeField] public int age;
-    [SerializeField] public string gender;
-    [SerializeField] public string occupation;
+    public string firstName;
+    public string lastName;
+    public int age;
+    public string gender;
+    public string occupation;
 
 
     public Customer(string firstName, string lastName, int age, string gender, string occupation)

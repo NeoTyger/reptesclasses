@@ -24,4 +24,9 @@ public class Fruit : Item
     {
         this.health = health;
     }
+
+    public override void MyTreat()
+    {
+        Debug.Log("Soc una fruita!");
+    }
 }

@@ -24,4 +24,10 @@ public class Coin : Item
     {
         this.points = points;
     }
+
+
+    public override void MyTreat()
+    {
+        Debug.Log("Soc una moneda");
+    }
 }
