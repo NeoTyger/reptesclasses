@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
 
-public class Fruit : Item
+public class Coin : Item
 {
 
-    public float health;
+    public int points;
     
     // Start is called before the first frame update
     void Start()
@@ -20,8 +20,8 @@ public class Fruit : Item
         
     }
 
-    public Fruit(string itemName, string id, string description, float health) : base(itemName, id, description)
+    public Coin(string itemName, string id, string description, int points) : base(itemName, id, description)
     {
-        this.health = health;
+        this.points = points;
     }
 }
